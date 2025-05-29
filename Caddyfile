@@ -1,0 +1,5 @@
+:80 {
+	respond "Hello, world!"
+}
+
+import /domain-config/*.conf
