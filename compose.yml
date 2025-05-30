@@ -1,6 +1,6 @@
 services:
   caddy:
-    image: caddy:alpine
+    image: bibica/caddy-l4-alpine-latest
     container_name: caddy
     restart: always
     networks:
