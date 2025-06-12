@@ -2,8 +2,6 @@ FROM caddy:2-builder-alpine AS builder
 
 RUN xcaddy build \
   --with github.com/caddyserver/cache-handler \
-  --with github.com/greenpau/caddy-auth-jwt \
-  --with github.com/greenpau/caddy-authz \
   --with github.com/caddyserver/forwardproxy \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/mholt/caddy-l4
