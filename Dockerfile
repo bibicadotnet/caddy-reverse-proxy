@@ -2,6 +2,8 @@ FROM caddy:2-builder-alpine AS builder
 
 RUN xcaddy build \
   --with github.com/mholt/caddy-l4 \
+  --with github.com/lucaslorentz/caddy-docker-proxy \
+  --github.com/porech/caddy-maxmind-geolocation \
   --with github.com/caddy-dns/cloudflare
 
 FROM caddy:2-alpine
