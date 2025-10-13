@@ -1,8 +1,8 @@
 FROM caddy:2-builder-alpine AS builder
 
 RUN xcaddy build \
-  --with github.com/mholt/caddy-l4
-  --with github.com/caddy-dns/cloudflare  
+  --with github.com/mholt/caddy-l4 \
+  --with github.com/caddy-dns/cloudflare
 
 FROM caddy:2-alpine
 
